@@ -1,0 +1,728 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/style.css">
+	<!-- font CSS -->
+	<link rel="stylesheet" href="font/NotoSansKR-Hestia.css">
+	<link rel="stylesheet" href="/css/calendar/fullcalendar.css">
+	<title>DTx Console - 환자리스트</title>
+</head>
+
+<body class="bg-con">
+	<!-- ============================================================== -->
+	<!-- main wrapper -->
+	<!-- ============================================================== -->
+	<div class="dashboard-main-wrapper">
+		<!-- ============================================================== -->
+		<!-- navbar -->
+		<!-- ============================================================== -->
+		<div class="dashboard-header">
+			<nav class="navbar navbar-expand-lg bg-white fixed-top headerFlex">
+				<span><a class="navbar-brand" href="../index.html">DTx Console</a></span><span><img src="images/logo_hospital.png"></span><span><img src="images/ic_cross.png"></span><span><img src="images/logo_waycen.png"></span>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse " id="navbarSupportedContent">
+					<ul class="navbar-nav ml-auto navbar-right-top">
+						<li class="nav-item dropdown nav-user">
+							<a class="nav-link nav-user-img" href="#" id="navbarDropdownMenuLink2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								홍길동 교수 / 강남세브란스 <img src="images/ic_arrow_down_sm.png">
+							</a>
+							<div class="dropdown-menu dropdown-menu-right nav-user-dropdown" aria-labelledby="navbarDropdownMenuLink2">
+								<a class="dropdown-item" href="#"><i class="fas fa-user mr-2"></i>내 계정</a>
+								<a class="dropdown-item" href="login.html"><i class="fas fa-power-off mr-2"></i>로그아웃</a>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</nav>
+		</div>
+		<!-- end navbar -->
+		<!-- ============================================================== -->
+		<!-- ============================================================== -->
+		<!-- left sidebar -->
+		<!-- ============================================================== -->
+		<div class="nav-left-sidebar sidebar-dark">
+			<div class="menu-list">
+				<nav class="navbar navbar-expand-lg navbar-light">
+					<a class="d-xl-none d-lg-none" href="#">Dashboard</a>
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					<div class="collapse navbar-collapse" id="navbarNav">
+						<ul class="navbar-nav flex-column">
+							<li class="nav-divider">
+								Menu
+							</li>
+							<li class="nav-item ">
+								<a class="nav-link active" href="#" data-toggle="collapse" aria-expanded="false" data-target="#submenu-1" aria-controls="submenu-1"><i class="fa fa-fw fa-user-circle"></i>Dashboard <span class="badge badge-success">6</span></a>
+								<div id="submenu-1" class="collapse submenu" style="">
+									<ul class="nav flex-column">
+										<li class="nav-item">
+											<a class="nav-link" href="#" data-toggle="collapse" aria-expanded="false" data-target="#submenu-1-2" aria-controls="submenu-1-2">E-Commerce</a>
+											<div id="submenu-1-2" class="collapse submenu" style="">
+												<ul class="nav flex-column">
+													<li class="nav-item">
+														<a class="nav-link" href="index.html">E Commerce Dashboard</a>
+													</li>
+													<li class="nav-item">
+														<a class="nav-link" href="ecommerce-product.html">Product List</a>
+													</li>
+													<li class="nav-item">
+														<a class="nav-link" href="ecommerce-product-single.html">Product Single</a>
+													</li>
+													<li class="nav-item">
+														<a class="nav-link" href="ecommerce-product-checkout.html">Product Checkout</a>
+													</li>
+												</ul>
+											</div>
+										</li>
+										<li class="nav-item">
+											<a class="nav-link" href="dashboard-finance.html">Finance</a>
+										</li>
+										<li class="nav-item">
+											<a class="nav-link" href="dashboard-sales.html">Sales</a>
+										</li>
+										<li class="nav-item">
+											<a class="nav-link" href="#" data-toggle="collapse" aria-expanded="false" data-target="#submenu-1-1" aria-controls="submenu-1-1">Infulencer</a>
+											<div id="submenu-1-1" class="collapse submenu" style="">
+												<ul class="nav flex-column">
+													<li class="nav-item">
+														<a class="nav-link" href="dashboard-influencer.html">Influencer</a>
+													</li>
+													<li class="nav-item">
+														<a class="nav-link" href="influencer-finder.html">Influencer Finder</a>
+													</li>
+													<li class="nav-item">
+														<a class="nav-link" href="influencer-profile.html">환자 상세정보</a>
+													</li>
+												</ul>
+											</div>
+										</li>
+									</ul>
+								</div>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#" data-toggle="collapse" aria-expanded="false" data-target="#submenu-2" aria-controls="submenu-2"><i class="fa fa-fw fa-rocket"></i>UI Elements</a>
+								<div id="submenu-2" class="collapse submenu" style="">
+									<ul class="nav flex-column">
+										<li class="nav-item">
+											<a class="nav-link" href="pages/cards.html">Cards <span class="badge badge-secondary">New</span></a>
+										</li>
+										<li class="nav-item">
+											<a class="nav-link" href="pages/general.html">General</a>
+										</li>
+										<li class="nav-item">
+											<a class="nav-link" href="pages/carousel.html">Carousel</a>
+										</li>
+										<li class="nav-item">
+											<a class="nav-link" href="pages/listgroup.html">List Group</a>
+										</li>
+										<li class="nav-item">
+											<a class="nav-link" href="pages/typography.html">Typography</a>
+										</li>
+										<li class="nav-item">
+											<a class="nav-link" href="pages/accordions.html">Accordions</a>
+										</li>
+										<li class="nav-item">
+											<a class="nav-link" href="pages/tabs.html">Tabs</a>
+										</li>
+									</ul>
+								</div>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#" data-toggle="collapse" aria-expanded="false" data-target="#submenu-3" aria-controls="submenu-3"><i class="fas fa-fw fa-chart-pie"></i>Chart</a>
+								<div id="submenu-3" class="collapse submenu" style="">
+									<ul class="nav flex-column">
+										<li class="nav-item">
+											<a class="nav-link" href="pages/chart-c3.html">C3 Charts</a>
+										</li>
+										<li class="nav-item">
+											<a class="nav-link" href="pages/chart-chartist.html">Chartist Charts</a>
+										</li>
+										<li class="nav-item">
+											<a class="nav-link" href="pages/chart-charts.html">Chart</a>
+										</li>
+										<li class="nav-item">
+											<a class="nav-link" href="pages/chart-morris.html">Morris</a>
+										</li>
+										<li class="nav-item">
+											<a class="nav-link" href="pages/chart-sparkline.html">Sparkline</a>
+										</li>
+										<li class="nav-item">
+											<a class="nav-link" href="pages/chart-gauge.html">Guage</a>
+										</li>
+									</ul>
+								</div>
+							</li>
+							<li class="nav-item ">
+								<a class="nav-link" href="#" data-toggle="collapse" aria-expanded="false" data-target="#submenu-4" aria-controls="submenu-4"><i class="fab fa-fw fa-wpforms"></i>Forms</a>
+								<div id="submenu-4" class="collapse submenu" style="">
+									<ul class="nav flex-column">
+										<li class="nav-item">
+											<a class="nav-link" href="pages/form-elements.html">Form Elements</a>
+										</li>
+										<li class="nav-item">
+											<a class="nav-link" href="pages/form-validation.html">Parsely Validations</a>
+										</li>
+										<li class="nav-item">
+											<a class="nav-link" href="pages/multiselect.html">Multiselect</a>
+										</li>
+										<li class="nav-item">
+											<a class="nav-link" href="pages/datepicker.html">Date Picker</a>
+										</li>
+										<li class="nav-item">
+											<a class="nav-link" href="pages/bootstrap-select.html">Bootstrap Select</a>
+										</li>
+									</ul>
+								</div>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#" data-toggle="collapse" aria-expanded="false" data-target="#submenu-5" aria-controls="submenu-5"><i class="fas fa-fw fa-table"></i>Tables</a>
+								<div id="submenu-5" class="collapse submenu" style="">
+									<ul class="nav flex-column">
+										<li class="nav-item">
+											<a class="nav-link" href="pages/general-table.html">General Tables</a>
+										</li>
+										<li class="nav-item">
+											<a class="nav-link" href="pages/data-tables.html">Data Tables</a>
+										</li>
+									</ul>
+								</div>
+							</li>
+							<li class="nav-divider">
+								Features
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#" data-toggle="collapse" aria-expanded="false" data-target="#submenu-6" aria-controls="submenu-6"><i class="fas fa-fw fa-file"></i> Pages </a>
+								<div id="submenu-6" class="collapse submenu" style="">
+									<ul class="nav flex-column">
+										<li class="nav-item">
+											<a class="nav-link" href="pages/blank-page.html">Blank Page</a>
+										</li>
+										<li class="nav-item">
+											<a class="nav-link" href="pages/blank-page-header.html">Blank Page Header</a>
+										</li>
+										<li class="nav-item">
+											<a class="nav-link" href="pages/login.html">Login</a>
+										</li>
+										<li class="nav-item">
+											<a class="nav-link" href="pages/404-page.html">404 page</a>
+										</li>
+										<li class="nav-item">
+											<a class="nav-link" href="pages/sign-up.html">Sign up Page</a>
+										</li>
+										<li class="nav-item">
+											<a class="nav-link" href="pages/forgot-password.html">Forgot Password</a>
+										</li>
+										<li class="nav-item">
+											<a class="nav-link" href="pages/pricing.html">Pricing Tables</a>
+										</li>
+										<li class="nav-item">
+											<a class="nav-link" href="pages/timeline.html">Timeline</a>
+										</li>
+										<li class="nav-item">
+											<a class="nav-link" href="pages/calendar.html">Calendar</a>
+										</li>
+										<li class="nav-item">
+											<a class="nav-link" href="pages/sortable-nestable-lists.html">Sortable/Nestable List</a>
+										</li>
+										<li class="nav-item">
+											<a class="nav-link" href="pages/widgets.html">Widgets</a>
+										</li>
+										<li class="nav-item">
+											<a class="nav-link" href="pages/media-object.html">Media Objects</a>
+										</li>
+										<li class="nav-item">
+											<a class="nav-link" href="pages/cropper-image.html">Cropper</a>
+										</li>
+										<li class="nav-item">
+											<a class="nav-link" href="pages/color-picker.html">Color Picker</a>
+										</li>
+
+									</ul>
+								</div>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#" data-toggle="collapse" aria-expanded="false" data-target="#submenu-7" aria-controls="submenu-7"><i class="fas fa-fw fa-inbox"></i>Apps <span class="badge badge-secondary">New</span></a>
+								<div id="submenu-7" class="collapse submenu" style="">
+									<ul class="nav flex-column">
+										<li class="nav-item">
+											<a class="nav-link" href="pages/inbox.html">Inbox</a>
+										</li>
+										<li class="nav-item">
+											<a class="nav-link" href="pages/email-details.html">Email Detail</a>
+										</li>
+										<li class="nav-item">
+											<a class="nav-link" href="pages/email-compose.html">Email Compose</a>
+										</li>
+										<li class="nav-item">
+											<a class="nav-link" href="pages/message-chat.html">Message Chat</a>
+										</li>
+									</ul>
+								</div>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#" data-toggle="collapse" aria-expanded="false" data-target="#submenu-8" aria-controls="submenu-8"><i class="fas fa-fw fa-columns"></i>Icons</a>
+								<div id="submenu-8" class="collapse submenu" style="">
+									<ul class="nav flex-column">
+										<li class="nav-item">
+											<a class="nav-link" href="pages/icon-fontawesome.html">FontAwesome Icons</a>
+										</li>
+										<li class="nav-item">
+											<a class="nav-link" href="pages/icon-material.html">Material Icons</a>
+										</li>
+										<li class="nav-item">
+											<a class="nav-link" href="pages/icon-simple-lineicon.html">Simpleline Icon</a>
+										</li>
+										<li class="nav-item">
+											<a class="nav-link" href="pages/icon-themify.html">Themify Icon</a>
+										</li>
+										<li class="nav-item">
+											<a class="nav-link" href="pages/icon-flag.html">Flag Icons</a>
+										</li>
+										<li class="nav-item">
+											<a class="nav-link" href="pages/icon-weather.html">Weather Icon</a>
+										</li>
+									</ul>
+								</div>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#" data-toggle="collapse" aria-expanded="false" data-target="#submenu-9" aria-controls="submenu-9"><i class="fas fa-fw fa-map-marker-alt"></i>Maps</a>
+								<div id="submenu-9" class="collapse submenu" style="">
+									<ul class="nav flex-column">
+										<li class="nav-item">
+											<a class="nav-link" href="pages/map-google.html">Google Maps</a>
+										</li>
+										<li class="nav-item">
+											<a class="nav-link" href="pages/map-vector.html">Vector Maps</a>
+										</li>
+									</ul>
+								</div>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#" data-toggle="collapse" aria-expanded="false" data-target="#submenu-10" aria-controls="submenu-10"><i class="fas fa-f fa-folder"></i>Menu Level</a>
+								<div id="submenu-10" class="collapse submenu" style="">
+									<ul class="nav flex-column">
+										<li class="nav-item">
+											<a class="nav-link" href="#">Level 1</a>
+										</li>
+										<li class="nav-item">
+											<a class="nav-link" href="#" data-toggle="collapse" aria-expanded="false" data-target="#submenu-11" aria-controls="submenu-11">Level 2</a>
+											<div id="submenu-11" class="collapse submenu" style="">
+												<ul class="nav flex-column">
+													<li class="nav-item">
+														<a class="nav-link" href="#">Level 1</a>
+													</li>
+													<li class="nav-item">
+														<a class="nav-link" href="#">Level 2</a>
+													</li>
+												</ul>
+											</div>
+										</li>
+										<li class="nav-item">
+											<a class="nav-link" href="#">Level 3</a>
+										</li>
+									</ul>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</nav>
+			</div>
+		</div>
+		<!-- ============================================================== -->
+		<!-- end left sidebar -->
+		<!-- ============================================================== -->
+		<!-- ============================================================== -->
+		<!-- wrapper  -->
+		<!-- ============================================================== -->
+		<div class="dashboard-wrapper">
+			<div class="patientContainer">
+				<div class="container-fluid dashboard-content patientDetail">
+					<!-- ============================================================== -->
+					<!-- pageheader -->
+					<!-- ============================================================== -->
+					<div class="row">
+						<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+							<div class="page-header">
+								<h3 class="mb-2">환자 상세정보</h3>
+								<p class="pageheader-text">Proin placerat ante duiullam scelerisque a velit ac porta, fusce sit amet vestibulum mi. Morbi lobortis pulvinar quam.</p>
+								<div class="page-breadcrumb">
+									<nav aria-label="breadcrumb">
+										<ol class="breadcrumb">
+											<li class="breadcrumb-item"><a href="#" class="breadcrumb-link">홈</a></li>
+											<li class="breadcrumb-item" aria-current="page">환자리스트</li>
+											<li class="breadcrumb-item active" aria-current="page">환자 상세정보</li>
+										</ol>
+									</nav>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row btnRow pd0 mbt16">
+						<div class="col-md-12"><button class="btn_back" title="뒤로"><img src="images/ic_back_48.png"></button></div>
+					</div>
+					<!-- ============================================================== -->
+					<!-- end pageheader -->
+					<!-- ============================================================== -->
+					<!-- ============================================================== -->
+					<!-- content -->
+					<!-- ============================================================== -->
+				   <div class="row patientInfoWrap">
+						<!-- ============================================================== -->
+						<!-- profile -->
+						<!-- ============================================================== -->
+						<div class="col-xl-4 col-lg-12 col-md-4 col-sm-12 boxLeft">
+							<!-- ============================================================== -->
+							<!-- card profile -->
+							<!-- ============================================================== -->
+							<div class="card patientLeft mgt0">
+								<div class="card-body">
+									<div class="text-center">
+										<h2 class="font-24 mb-0">홍길동</h2>
+										<p class="pdt8"><span>1990.11.01 / 만 30세</span><span>여성 <img src="images/ic_female_20.png"></span></p>
+									</div>
+								</div>
+								<div class="card-body border-top">
+									<h3 class="">기본 정보</h3>
+									<div class="">
+										<ul class="list-unstyled mb-0">
+											<li class="mb-2"><i class="fas fa-fw fa-envelope mr-2"></i>이메일 : 123123@gmail.com</li>
+											<li class="mb-0"><i class="fas fa-fw fa-phone mr-2"></i>연락처 : 010-1234-5465</li>
+											<li class="mb-0"><i class="fas fa-fw fa-phone mr-2"></i>비상연락처 : 010-1234-5465</li>
+										</ul>
+									</div>
+								</div>
+								<div class="card-body border-top">
+									<h3 class="">질환 정보</h3>
+									<div class="">
+										<ul class="list-unstyled mb-0">
+										    <li class="mb-2"><i class="fas fa-fw fa-envelope mr-2"></i>치료 시작일 : 2023.02.12</li>
+											<li class="mb-2"><i class="fas fa-fw fa-envelope mr-2"></i>마지막 진료일 : 2023.02.12</li>
+											<li class="mb-0"><i class="fas fa-fw fa-phone mr-2"></i>진단명 : 공황장애</li>
+										</ul>
+									</div>
+								</div>
+								<div class="card-body border-top">
+									<h3 class="">카테고리</h3>
+									<div>
+										<a href="#" class="badge badge-primary mr-1">불안장애</a><a href="#" class="badge badge-primary mr-1">우울증</a><a href="#" class="badge badge-primary mr-1">공황발작</a>
+									</div>
+								</div>
+							</div>
+							<!-- ============================================================== -->
+							<!-- end card profile -->
+							<!-- ============================================================== -->
+						</div>
+					    <div class="pd0 boxRight col-xl-8 col-lg-8 col-md-8 col-sm-12">
+				   	   	    	<div class="col-xl-4 col-lg-12 col-md-4 col-sm-12 float-left cardScroll">
+								 <div class="card-body colored-card">
+										<h4 class=""><span class="round-red"></span><span>공황 예방</span></h4>
+										<div class="">
+											<ul class="list-unstyled mb-0">
+												<li class="mb-2"><i class="fas fa-fw fa-envelope mr-2"></i><div class="item">09:00 </div><div class="item">근이완 가이드</div><div class="item">10분</div></li>
+											</ul>
+										</div>
+								 </div>
+			   	      			 <div class="card-body colored-card">
+										<h4 class=""><span class="round-blue"></span><span>훈련 진행</span></h4>
+										<div class="">
+											<ul class="list-unstyled mb-0">
+												<li class="mb-2"><i class="fas fa-fw fa-envelope mr-2"></i><div class="item">09:00 </div><div class="item">근이완 가이드</div><div class="item">10분</div></li>
+											</ul>
+										</div>
+								 </div>
+			   	                 <div class="card-body colored-card">
+										<h4 class=""><span class="round-green"></span><span>공황 탈출</span></h4>
+										<div class="">
+											<ul class="list-unstyled mb-0">
+												<li class="mb-2"><i class="fas fa-fw fa-envelope mr-2"></i><div class="item">09:00 </div><div class="item">마음 안정의 말 듣기</div><div class="item">5분</div></li>
+											</ul>
+										</div>
+								 </div> <div class="card-body colored-card">
+										<h4 class=""><span class="round-red"></span><span>공황 발생한날</span></h4>
+										<div class="">
+											<ul class="list-unstyled mb-0">
+												<li class="mb-2"><i class="fas fa-fw fa-envelope mr-2"></i><div class="item">09:00 </div><div class="item">근이완 가이드</div><div class="item">10분</div></li>
+											</ul>
+										</div>
+								 </div> 
+								 <div class="card-body colored-card">
+										<h4 class=""><span class="round-red"></span><span>공황 발생한날</span></h4>
+										<div class="">
+											<ul class="list-unstyled mb-0">
+												<li class="mb-2"><i class="fas fa-fw fa-envelope mr-2"></i><div class="item">09:00 </div><div class="item">근이완 가이드</div><div class="item">10분</div></li>
+											</ul>
+										</div>
+								 </div>
+			   	        
+				   	        </div>
+				   	   	    <div class="col-xl-8 col-lg-12 col-md-8 col-sm-8 float-left">
+								<div class="card mbt0">
+									<div class="card-body">
+										<div id="calendar1"></div>
+									</div>
+								</div>
+							</div>					   	    
+					   </div>
+						<!-- ============================================================== -->
+						<!-- end profile -->
+						<!-- ============================================================== -->
+						<!-- ============================================================== -->
+						<!-- campaign data -->
+						<!-- ============================================================== -->
+						<!-- ============================================================== -->
+						<!-- end campaign data -->
+						<!-- ============================================================== -->
+					</div>
+				      <!-- basic pills  -->
+                        <!-- ============================================================== -->
+                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 mb-5 pd0">
+                            <div class="simple-card">
+                                <ul class="nav nav-tabs" id="myTab5" role="tablist">
+                                    <li class="nav-item">
+                                        <a class="nav-link active border-left-0" id="tab_menu01_cbt" data-toggle="tab" href="#menu01-cbt" role="tab" aria-controls="home" aria-selected="true">인지행동치료</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" id="tab_menu02_care" data-toggle="tab" href="#menu02-care" role="tab" aria-controls="profile" aria-selected="false">케어서비스</a>
+                                    </li>
+                                </ul>
+                                <div class="tab-content" id="myTabContent5">
+                                   <div class="tab-pane fade show active" id="menu01-cbt" role="tabpanel" aria-labelledby="tab_menu01_cbt">
+                                   <div class="row">
+                                   	<div class="col-xl-12">
+                                   		<button class="float-right btn-print"><img src="images/ic_print_24.png" alt="인쇄" title="인쇄"></button>
+                                   	</div>
+                                   </div>
+                                    <h5 class="card-header pd0 mbt8">처방 및 Step별 진행 내용</h5>
+                                      <div class="table-responsive tableScheduler">
+                                      	<table width="100%" border="1">
+											  <tbody>
+												<tr>
+												  <th scope="col" rowspan="2">&nbsp;</th>
+												  <th scope="col" colspan="32" class="text-center"><h3>2023년 3월</h3></th>
+												</tr>
+												<tr>
+												  <td>1</td>
+												  <td>2</td>
+												  <td>3</td>
+												  <td>4</td>
+												  <td>5</td>
+												  <td>6</td>
+												  <td>7</td>
+												  <td>8</td>
+												  <td>9</td>
+												  <td>10</td>
+												  <td>11</td>
+												  <td>12</td>
+												  <td>13</td>
+												  <td>14</td>
+												  <td>15</td>
+												  <td>16</td>
+												  <td>17</td>
+												  <td>18</td>
+												  <td>19</td>
+												  <td>20</td>
+												  <td>21</td>
+												  <td>22</td>
+												  <td>23</td>
+												  <td>24</td>
+												  <td>25</td>
+												  <td>26</td>
+												  <td>27</td>
+												  <td>28</td>
+												  <td>29</td>
+												  <td>30</td>
+												  <td>31</td>
+												</tr>
+												<tr class="dateTd">
+												  <th scope="row"><h5>step1</h5><h4>공황장애 이겨내기 첫걸음</h4><h4 class="text-right taskdone">완료</h4></th>
+												  <td colspan="32" class="text-center"><div class="taskbarWrap"><div class="tastBar"><div class="taskPer"></div></div></div></td>
+												</tr>
+												<tr class="dateTd">
+												  <th scope="row"><h5>step2</h5><h4>공황장애 극복훈련 시작</h4><h4 class="text-right taskdone">3차</h4></th>
+												  <td colspan="32" class="text-center"><div class="taskbarWrap"><div class="tastBar" style="width:50%;left:2%"><div class="taskPer" style="width:30%"></div></div></div></td>
+												</tr>
+												<tr class="dateTd">
+												  <th scope="row"><h5>step3</h5><h4>생각을 바꿔 공황장애 다스리기</h4><h4 class="text-right taskdone">2차</h4></th>
+												  <td colspan="32" class="text-center"><div class="taskbarWrap"><div class="tastBar" style="width:20%;left:3%"><div class="taskPer" style="width:10%"></div></div></div></td>
+												</tr>
+												<tr class="dateTd">
+												  <th scope="row"><h5>step4</h5><h4>공황장애 이겨내기 첫걸음</h4><h4 class="text-right taskdone">1차</h4></th>
+												  <td colspan="32" class="text-center"><div class="taskbarWrap"><div class="tastBar" style="width:10%;left:10%"><div class="taskPer" style="width:60%"></div></div></div></td>
+												</tr>
+												<tr class="dateTd">
+												  <th scope="row"><h5>step5</h5><h4>공황장애 이겨내기 첫걸음</h4><h4 class="text-right taskdone">1차</h4></th>
+												  <td colspan="32" class="text-center"><div class="taskbarWrap"><div class="tastBar" style="width:30%"><div class="taskPer" style="width:70%"></div></div></div></td>
+												</tr>
+											  </tbody>
+										</table>
+                                      </div>
+                                      									 <div class="row">
+									   <!-- basic table  -->
+									<!-- ============================================================== -->
+									<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 mt32">
+										<div class="card">
+											<h5 class="card-header pd0 mbt8">처방 내역</h5>
+											<div class="card-body pd0">
+												<div class="table-responsive">
+													<table class="table table-bordered p-history">
+														<thead>
+															<tr>
+																<th>번호</th>
+																<th>처방일자</th>
+																<th>진행 기간</th>
+																<th>단계</th>
+																<th>진행율</th>
+																<th>상세보기</th>
+															</tr>
+														</thead>
+														<tbody>
+															<tr>
+																<td>5</td>
+																<td>2023.01.01</td>
+																<td>2023.01.01 ~ 2023.04.31</td>
+																<td>Step 1: 공황장애 이겨내기 첫걸음</td>
+																<td>
+																 <div class="d-flex">
+																	<div class="progress-bg mt4" style="width:100% !important">
+																	 <div class="progress-bar-blue" role="30%" style="width:30%;">	
+																	 </div>
+																   </div> 
+																   <div class="progress-text">30%</div>
+																  </div>     
+															    </td>
+																<td><button class="btn_more">보기</button></td>
+															</tr>
+															<tr>
+																<td>4</td>
+																<td>2023.01.01</td>
+																<td>2023.01.01 ~ 2023.04.31</td>
+																<td>Step 1: 공황장애 이겨내기 첫걸음</td>
+																<td>
+																<div class="d-flex">
+																	<div class="progress-bg mt4" style="width:100% !important">
+																	 <div class="progress-bar-blue" role="30%" style="width:20%;">	
+																	 </div>
+																   </div> 
+																   <div class="progress-text">20%</div>
+																  </div> 
+																</td>
+																<td><button class="btn_more">보기</button></td>
+															</tr>
+															<tr>
+																<td>3</td>
+																<td>2023.01.01</td>
+																<td>2023.01.01 ~ 2023.04.31</td>
+																<td>Step 1: 공황장애 이겨내기 첫걸음</td>
+																<td>
+																<div class="d-flex">
+																	<div class="progress-bg mt4" style="width:100% !important">
+																	 <div class="progress-bar-blue" role="30%" style="width:70%;">	
+																	 </div>
+																   </div> 
+																   <div class="progress-text">70%</div>
+																  </div> 
+																</td>
+																<td><button class="btn_more">보기</button></td>
+															</tr>
+														   <tr>
+																<td>2</td>
+																<td>2023.01.01</td>
+																<td>2023.01.01 ~ 2023.04.31</td>
+																<td>Step 1: 공황장애 이겨내기 첫걸음</td>
+																<td>
+															    <div class="d-flex">
+																	<div class="progress-bg mt4" style="width:100% !important">
+																	 <div class="progress-bar-blue" role="30%" style="width:30%;">	
+																	 </div>
+																   </div> 
+																   <div class="progress-text">30%</div>
+																  </div> 
+															    </td>
+																<td><button class="btn_more">보기</button></td>
+															</tr>
+															<tr>
+																<td>1</td>
+																<td>2023.01.01</td>
+																<td>2023.01.01 ~ 2023.04.31</td>
+																<td>Step 1: 공황장애 이겨내기 첫걸음</td>
+																<td>
+																	<div class="d-flex">
+																	<div class="progress-bg mt4" style="width:100% !important">
+																	 <div class="progress-bar-blue" role="50%" style="width:30%;">	
+																	 </div>
+																   </div> 
+																   <div class="progress-text">30%</div>
+																  </div> 
+																</td>
+																<td><button class="btn_more">보기</button></td>
+															</tr>
+													</table>
+												</div>
+											</div>
+										</div>
+									</div>
+									<!-- ============================================================== -->
+									<!-- end basic table  -->
+								   </div>
+                                    </div>
+                                    <div class="tab-pane fade" id="menu02-care" role="tabpanel" aria-labelledby="tab_menu02_care">
+                                        <p>Nullam et tellus ac ligula condimentum sodales. Aenean tincidunt viverra suscipit. Maecenas id molestie est, a commodo nisi. Quisque fringilla turpis nec elit eleifend vestibulum. Aliquam sed purus in odio ullamcorper congue consectetur in neque. Aenean sem ex, tempor et auctor sed, congue id neque. </p>
+									</div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <!-- ============================================================== -->
+                        <!-- end basic pills  -->
+				</div>
+			</div>
+			<!-- ============================================================== -->
+			<!-- end content -->
+			<!-- ============================================================== -->
+			<div class="footer subFoot">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
+                           Copyright © Waycen All Rights Reserved
+                        </div>
+                        <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
+                            <div class="text-md-right footer-links d-none d-sm-block">
+                                <a href="javascript: void(0);">Contact</a>
+                                <a href="javascript: void(0);">이용약관</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+			<!-- ============================================================== -->
+			<!-- end footer -->
+			<!-- ============================================================== -->
+		</div>
+		<!-- ============================================================== -->
+		<!-- end wrapper -->
+		<!-- ============================================================== -->
+	</div>
+	<!-- ============================================================== -->
+	<!-- end main wrapper -->
+	<!-- ============================================================== -->
+	<!-- Optional JavaScript -->
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="js/bootstrap.bundle.js"></script>
+	<script src="js/jquery.slimscroll.js"></script>
+	<script src="js/moment.min.js"></script>
+	<script src="js/full-calendar/calendar.js"></script>
+	<script src="js/jquery-ui.min.js"></script>
+	<script src="js/full-calendar/fullcalendar.js"></script>
+	<script src="js/main-js.js"></script>
+</body>
+
+</html>
